@@ -66,11 +66,12 @@ function catFunction(catArray) {
     if (catArray[i].age) {
       catAge = catArray[i].age;
     }
-    const catDetails = `<div>
+    catHTML+= `<div>
                           <h5>${catArray[i].name}</h5>
                           <p>${catAge}</p>
                         </div>`;
     console.log(catDetails);
-    catHTML += catDetails;
+    
   }
+   console.log(catHTML) 
 }
